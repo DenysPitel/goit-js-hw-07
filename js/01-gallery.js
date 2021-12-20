@@ -1,4 +1,3 @@
-// import * as basicLightbox from 'basiclightbox';
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
@@ -7,7 +6,6 @@ const galleryContainer = document.querySelector('.gallery');
 
 galleryContainer.insertAdjacentHTML('beforeend', createPhotoGalleryMarkup(galleryItems));
 galleryContainer.addEventListener('click', createModal);
-
 
 function createPhotoGalleryMarkup () {
         return galleryItems.map(({preview, original, description}) => {
