@@ -26,6 +26,9 @@ function createPhotoGalleryMarkup () {
 
 function createModal (e) {
     e.preventDefault();
+    if (!e.target.classList.contains('gallery__image')) {
+        return;
+    }
 
     const modal = basicLightbox.create(`
         <img src="${e.target.dataset.source}" width="800" height="600">
